@@ -31,5 +31,17 @@ page 50201 "Instructor Card"
             }
         }
     }
-
+    actions
+    {
+        area(processing)
+        {
+            action(Sessions)
+            {
+                Caption = 'Sessions';
+                Image = RelatedInformation;
+                RunObject = Page "Event Session List";
+                RunPageLink = "Instructor No." = FIELD("No.");
+            }
+        }
+    }
 }

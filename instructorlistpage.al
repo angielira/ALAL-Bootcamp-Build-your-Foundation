@@ -28,4 +28,18 @@ page 50200 "Instructor List"
             }
         }
     }
+    actions
+    {
+        area(processing)
+        {
+            action(Sessions)
+            {
+                Caption = 'Sessions';
+                Image = RelatedInformation;
+                RunObject = Page "Event Session List";
+                RunPageLink = "Instructor No." = FIELD("No.");
+            }
+        }
+    }
+
 }
